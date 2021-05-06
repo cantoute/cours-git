@@ -10,7 +10,7 @@
 |BRISSAC Lorry	| lbris17 | |
 |CALISKAN Menekse	| Menek | |
 |CORVO Matthieu	| matthcorvo | |
-|DIALLO Biné	| binediallo | |
+|DIALLO Biné	| binediallo | x|
 |GUETY Ahmed	| | |
 |JEAN-BART | Tifany	| |
 |KATEB Djamel	| | |
