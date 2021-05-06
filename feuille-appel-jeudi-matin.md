@@ -14,7 +14,7 @@
 |GUETY Ahmed	| | |
 |JEAN-BART | Tifany	| |
 |KATEB Djamel	| | |
-|LUCAS Anthony	| LUCAS-Anthony | |
+|LUCAS Anthony	| LUCAS-Anthony |x|
 |LUHUMBU-MAMBEKO Lucienne	 | lucc-ngoma |x|
 |MASRIA Jaouad	| | |
 |MOUAYADOU Salim	| Ecasphir |x|
