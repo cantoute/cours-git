@@ -29,7 +29,7 @@
 |RUBY Cedric	
 |SAGGADI-SIFODIL Samira	| samira-rgb |x|
 SHAMSI Nawid	| | |
-SIDIBE Coumba	| COUMBASIDIBE ||
+SIDIBE Coumba	| COUMBASIDIBE |x|
 THIANE Madické	
 THIOR Aspasia	
 ZEKARA Anyssa	
