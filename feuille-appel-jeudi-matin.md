@@ -17,7 +17,7 @@
 |LUCAS Anthony	| LUCAS-Anthony | |
 |LUHUMBU-MAMBEKO Lucienne	 | lucc-ngoma |x|
 |MASRIA Jaouad	| | |
-|MOUAYADOU Salim	| Ecasphir | |
+|MOUAYADOU Salim	| Ecasphir |x|
 |NEJJAM Wahid |	wahid-nejjam | |
 |NOGHLI Alen	| alennoghli |*|
 |OURDJINI Morad | | |
