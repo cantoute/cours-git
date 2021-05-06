@@ -10,11 +10,8 @@ Le poulpe se voit observer par le condor depuis un arbre
 
 Je ne suis pas seule sur ma branche
 
-
-
-
-
 un caribou regarde un sac
+
 Maître Corbeau, sur un arbre perché,
 Tenait en son bec un fromage.
 Maître Renard, par l'odeur alléché,
