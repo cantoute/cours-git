@@ -8,7 +8,7 @@
 |BATICAM Olga| | |
 |BELRHAZI Maha	| M-Belrhazi | |
 |BRISSAC Lorry	| lbris17 | |
-|CALISKAN Menekse	| Menek | |
+|CALISKAN Menekse	| Menek | x|
 |CORVO Matthieu	| matthcorvo | |
 |DIALLO Biné	| binediallo | |
 |GUETY Ahmed	| | |
