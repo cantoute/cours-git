@@ -7,7 +7,7 @@
 |ADJALI Abderahmane| |	|
 |BATICAM Olga| | |
 |BELRHAZI Maha	| M-Belrhazi | x|
-|BRISSAC Lorry	| lbris17 | |
+|BRISSAC Lorry	| lbris17 | x |
 |CALISKAN Menekse	| Menek | x|
 |CORVO Matthieu	| matthcorvo | |
 |DIALLO Biné	| binediallo | |
@@ -27,7 +27,7 @@
 |RECOULES Jean-Pierre |	Vapula-Ohyeah | |
 |ROCHETTE Amal	| | |
 |RUBY Cedric	
-|SAGGADI-SIFODIL Samira	| samira-rgb | |
+|SAGGADI-SIFODIL Samira	| samira-rgb |x|
 SHAMSI Nawid	| | |
 SIDIBE Coumba	| COUMBASIDIBE ||
 THIANE Madické	
