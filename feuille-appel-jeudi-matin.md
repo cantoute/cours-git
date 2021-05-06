@@ -19,7 +19,7 @@
 |MASRIA Jaouad	| | |
 |MOUAYADOU Salim	| Ecasphir | |
 |NEJJAM Wahid |	wahid-nejjam | |
-|NOGHLI Alen	| alennoghli | |
+|NOGHLI Alen	| alennoghli |*|
 |OURDJINI Morad | | |
 |PIERRE Faublax-Junior	| | |
 |POTHAIN-BERNYS Séverine |	vinsevi | |
