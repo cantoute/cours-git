@@ -15,7 +15,7 @@
 |JEAN-BART | Tifany	| |
 |KATEB Djamel	| | |
 |LUCAS Anthony	| LUCAS-Anthony | |
-|LUHUMBU-MAMBEKO Lucienne	 | lucc-ngoma | |
+|LUHUMBU-MAMBEKO Lucienne	 | lucc-ngoma |x|
 |MASRIA Jaouad	| | |
 |MOUAYADOU Salim	| Ecasphir | |
 |NEJJAM Wahid |	wahid-nejjam | |
