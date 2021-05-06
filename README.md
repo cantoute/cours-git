@@ -1,48 +1,112 @@
-# cours-git
+# Git - Versioning et sauvegarde
 
-//////// sur le fichier même
+## Git : fonctionnement élémentaire
 
-* git add readme.md = j'ai l'intiention de commiter ce fichier. prend donc en compte le readme dans le prochain commit
+https://education.github.com/git-cheat-sheet-education.pdf
 
-* git commit = donner un nom au commit 
-* git commit -m = "donner un nom au commit" (sans passer par un éditeur)
-
-* git push = envoie le commit sur github
-
-* git diff = permet de voir les modifications qui ont été réalisées 
-
-* git pull = permet d'ajouter toutes les modifications du document initial (celui depuis lequel le clone a été fait)
-
-* git checkout -b dev/diallo = on créer une branche et on bascule dans la branche (on les appels par leurs objectfs (ex: fix/button broken. un slash = un dossier))
-
-*git branch = liste de toutes les branches et met en couleur la branche sur laquelle on se trouve
-
-* git checkout master = retourner vers la branche master
-
-* git checkout dev/diallo = retourner vers la branche dev/diallo
-
-* git checkout 
-ces commandes s’effectuent en bash
-
-# quand le ficheier affiche un U = fichier créer
-# quand le fichier affiche un M = fichier modifier
-# quand le fichier afdfiche un A = c'est un fichier qui est en attente d'être ajouté
-# La branche démarre à partir du dernier commit
-
-///////// gestion des fichiers 
-
-
-mkdir projet = crée un nouveau dossier nommé projet
-
-cd projet = ouvre le dossier projet
-
-git clone https://github.com/cantoute/cours-git.git = clone le fichier lié au lien 
-
-cat README.MD = ouvre le fichier dans le terminal en lecture seule
-
-Pour avoir une copie locale du repos :
+---
+### Initialiser un nouveau dépot dans le dossier en cours
 
 ```bash
-$ cd to/where/you/want # move to this dir - projects ?
+$ git init
+```
+
+### Ou cloner un dépot existant
+```bash
+# Avoir une copie locale de ce dépot
 $ git clone https://github.com/cantoute/cours-git.git
 ```
+
+---
+
+### Synchroniser le dépot local
+```bash
+# Opération à effectuer avant de se préparer à valider 
+# vos changements dans le dépot (commit)
+
+$ git pull
+
+# Récupérer toutes les branche (recommandé sauf sur les projets énormes)
+$ git pull --all
+```
+
+### Avoir un aperçu des différences avec le dépot
+
+```bash
+$ git diff
+```
+
+### Les branches
+```bash
+# Créer une branche et on bascule dans la branche
+$ git checkout -b dev/ma-branche
+# on les nomme par leur intention
+# Ex: fix/button feature/new-function
+
+# liste de toutes les branches locales et met en couleur la branche sur laquelle on se trouve
+$ git branch
+
+# Basculer sur une branche existante
+$ git checkout master
+
+$ git checkout dev/ma-branche
+```
+### Indexer un ou des fichiers en prévision d'un `commit`
+En anglais le terme utilisé est 'stage'
+
+Cette action est préalable au commit.  Via `git add` on déclare (ajout à l'index) les fichiers qui seront impliqués dans le commit.
+
+```bash
+# ajouter un fichier seul
+$ git add mon-fichier.txt
+
+# ajouter des fichiers par groupe
+$ git add *.txt
+
+# ajouter tous les fichiers du dossier
+# (sauf ceux mentionnés dans .gitignore)
+$ git add .
+
+# l'opération inverse :
+# (utilisez "git restore --staged <fichier>..." pour désindexer)
+$ git restore --staged mon-fichier.txt
+```
+
+
+*J'ai l'intention de 'commiter' ce fichier. Prend donc en compte `README.md` dans le commit que je me prépare à effectuer :*
+```bash
+$ git add README.md
+```
+```bash
+# vous pouvez ensuite vérifier que tout est en ordre
+$ git status
+Sur la branche dev/ma-branche
+Votre branche est à jour avec 'origin/master'.
+
+Modifications qui seront validées :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+        modifié :         README.md
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+```
+
+### Inscrire au dépot les changements indexés (commit)
+```bash
+$ git commit -m "Message de l'inscription / Donner un nom au commit"
+
+# pour saisir le message via un éditeur (nano/vim/...)
+$ git commit
+```
+
+### Publier les changements sur le dépot distant
+```bash
+# envoie le commit sur github par exemple
+$ git push
+```
+---
+## Terminal
+Aussi nommé Console ou Shell
+
+TODO
+

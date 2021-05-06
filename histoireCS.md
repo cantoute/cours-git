@@ -1,1 +1,0 @@
-Je regarde un sac en forme de Caribou
