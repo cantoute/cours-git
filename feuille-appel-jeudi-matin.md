@@ -18,7 +18,7 @@
 |LUHUMBU-MAMBEKO Lucienne	 | lucc-ngoma |x|
 |MASRIA Jaouad	| | |
 |MOUAYADOU Salim	| Ecasphir |x|
-|NEJJAM Wahid |	wahid-nejjam | |
+|NEJJAM Wahid |	wahid-nejjam |x|
 |NOGHLI Alen	| alennoghli |*|
 |OURDJINI Morad | | |
 |PIERRE Faublax-Junior	| | |
