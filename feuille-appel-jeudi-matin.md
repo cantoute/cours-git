@@ -17,7 +17,7 @@
 |LUCAS Anthony	| LUCAS-Anthony | |
 |LUHUMBU-MAMBEKO Lucienne	 | lucc-ngoma |x|
 |MASRIA Jaouad	| | |
-|MOUAYADOU Salim	| Ecasphir |x|
+|MOUAYADOU Salim	| Ecasphir | |
 |NEJJAM Wahid |	wahid-nejjam | |
 |NOGHLI Alen	| alennoghli | |
 |OURDJINI Morad | | |
@@ -27,7 +27,7 @@
 |RECOULES Jean-Pierre |	Vapula-Ohyeah | |
 |ROCHETTE Amal	| | |
 |RUBY Cedric	
-|SAGGADI-SIFODIL Samira	| samira-rgb | |
+|SAGGADI-SIFODIL Samira	| samira-rgb |x|
 SHAMSI Nawid	| | |
 SIDIBE Coumba	| COUMBASIDIBE ||
 THIANE Madické	
