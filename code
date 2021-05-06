@@ -1,0 +1,24 @@
+//////// sur le fichier même
+
+* git add readme.md = j'ai l'intiention de commiter ce fichier. prend donc en compte le readme dans le prochain commit
+
+* git commit = donner un nom au commit 
+
+* git push = envoie le commit sur github
+
+* git diff = permet de voir les modifications qui ont été réalisées 
+
+* git pull = permet d'ajouter toutes les modifications du document initial (celui depuis lequel le clone a été fa)
+
+ces commandes s’effectuent en bash
+
+///////// gestion des fichiers 
+
+
+mkdir projet = crée un nouveau dossier nommé projet
+
+cd projet = ouvre le dossier projet
+
+git clone https://github.com/cantoute/cours-git.git = clone le fichier lié au lien 
+
+cat README.MD = ouvre le fichier dans le terminal en lecture seule
