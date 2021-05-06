@@ -6,6 +6,8 @@ bibette murmure sur une planche
 
 les moustiques sont de cuisinés à la truffe
 
+Je mange du soleil à chaque repas 
+
 Le poulpe se voit observer par le condor depuis un arbre
 
 Je ne suis pas seule sur ma branche
