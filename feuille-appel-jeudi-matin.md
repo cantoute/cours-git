@@ -22,7 +22,7 @@
 |NOGHLI Alen	| alennoghli |*|
 |OURDJINI Morad | | |
 |PIERRE Faublax-Junior	| | |
-|POTHAIN-BERNYS Séverine |	vinsevi | |
+|POTHAIN-BERNYS Séverine |	vinsevi |x|
 |RAMASSAMY Yannick	| |
 |RECOULES Jean-Pierre |	Vapula-Ohyeah | |
 |ROCHETTE Amal	| | |
