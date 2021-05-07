@@ -1,20 +1,55 @@
 # Git - Versioning et sauvegarde
 
+---
+
+## Installation de git
+
+### Windows
+
+### Mac OS X
+
+Il est recommandé d'utiliser l'installation via `homebrew`.
+- installer `homebrew`
+
+Si votre ordinateur ne dispose pas de commande `brew`, suivre la procédure décrite ici : https://brew.sh/index_fr
+
+- installer `git`
+
+```bash
+brew install git
+```
+
+## Configuration de git
+### A éffectuer une fois
+```bash
+git config --global user.email your@email.com
+git config --global user.name "Votre NOM"
+```
+
+---
+
 ## Git : fonctionnement élémentaire
 
 https://education.github.com/git-cheat-sheet-education.pdf
 
 ---
+
 ### Initialiser un nouveau dépot dans le dossier en cours
 
 ```bash
-$ git init
+# cd mon/dossier/de/travail
+git init
 ```
 
 ### Ou cloner un dépot existant
 ```bash
 # Avoir une copie locale de ce dépot
-$ git clone https://github.com/cantoute/cours-git.git
+git clone https://github.com/cantoute/cours-git.git
+
+# si vous devez travailler sur le code, (publier vos modifications)
+# il est préférable d'utiliser le lien ssh
+# il vous permettra d'utiliser l'authentification par clé ssh
+git clone git@github.com:cantoute/cours-git.git
 ```
 
 ---
@@ -105,8 +140,120 @@ $ git commit
 $ git push
 ```
 ---
-## Terminal
-Aussi nommé Console ou Shell
+## Terminal *(Console ou Shell)*
 
-TODO
+Quelques Commandes shell incontournables
+
+### `pwd` : dossier en cours
+
+```bash
+my-account@my-computer:~ $ pwd
+/Users/my-account
+
+```
+
+### `ls` : lister le contenu d'un répertoire
+
+```bash
+my-account@my-computer:~ $ ls
+
+# inclure les fichiers cachés
+my-account@my-computer:~ $ ls -a
+
+# montrer les fichiers cachés et donner une vue détaillé
+my-account@my-computer:~ $ ls -al
+
+# tailles des fichiers avec des valeurs humaines (ex: 123k)
+my-account@my-computer:~ $ ls -lh *.txt
+
+my-account@my-computer:~ $ ls Desktop/*
+
+```
+
+### `cd` : changer de répertoire courant
+
+```bash
+my-account@my-computer:~ $ pwd
+/Users/my-account
+my-account@my-computer:~ $ cd Desktop
+my-account@my-computer:~/Desktop $ pwd
+/Users/my-account/Desktop
+my-account@my-computer:~/Desktop $ cd ..
+my-account@my-computer:~ $ pwd
+/Users/my-account
+
+# retourner à la base de son répertoire personnel (home)
+my-account@my-computer:~/n-importe-où $ cd
+my-account@my-computer:~ $ pwd
+/Users/my-account
+```
+
+### `mkdir` : création d'un dossier
+
+```bash
+my-account@my-computer:~ $ mkdir Démo
+my-account@my-computer:~ $ cd Démo
+my-account@my-computer:~/Démo $ pwd
+/Users/my-account/Démo
+```
+### `rmdir` : supprimer un dossier vide
+
+```bash
+# supprimer un dossier vide
+my-account@my-computer:~/Démo $ mkdir toto
+my-account@my-computer:~/Démo $ rmdir toto
+
+my-account@my-computer:~/Démo $ mkdir toto2
+my-account@my-computer:~/Démo $ touch toto2/empty-file
+
+# supprimer un dossier et tout son contenu
+# -r = récursif
+# -f = forcer (ne pas demander de confirmation)
+my-account@my-computer:~/Démo $ rm -rf toto2
+# Attention, cette manipulation ne passe pas par la corbeille,
+# en tant que root (administrateur) "rm -rf /" supprimera tout
+# et sans vous demander aucune confirmation.
+```
+
+### `cp` : copier
+
+### `mv` : renommer / déplacer
+
+### `rm` : supprimer
+
+### `cat` : concaténation de fichier texte
+Il permet entre autres de lire un fichier texte en retournant son contenu dans la console.  Souvent utilisé pour rediriger sa sortie vers une autre commande.
+
+### `less` : lire le contenu d’un fichier texte de façon interactive. (utile pour les fichiers longs)
+
+### `grep` : filtrer les lignes d’un fichier texte et de n’afficher que celles correspondant à un motif (pattern)
+
+Il peut être utilisé pour recherche tout fichier contenant un mot.
+```bash
+$ grep "blabla" *.txt
+
+# récursif (dans tous les sous dossiers également)
+$ grep -R "blabla"
+```
+### `touch` : Création d’un fichier vide
+Si le fichier existe, cela actualise la date de modification du fichier.
+
+```bash
+antony@dell-aio:~$ touch toto
+antony@dell-aio:~$ ls -l toto
+-rw-rw-r-- 1 antony antony 0 mai    7 19:04 toto
+
+# 1 minute plus tard
+antony@dell-aio:~$ touch toto
+antony@dell-aio:~$ ls -l toto
+-rw-rw-r-- 1 antony antony 0 mai    7 19:05 toto
+```
+
+### `nano` Éditeur de fichier texte en console (simple)
+
+### `vi` / `vim`
+Éditeur de fichier texte en console. Vim est plus complexe à prendre en main et sans quelques notions totalement inutilisable, nano est votre ami :) 
+If you want to set the editor only for Git, do either (you don’t need both):
+Set core.editor in your Git config: git config --global core.editor "vim"
+Set the GIT_EDITOR environment variable: export GIT_EDITOR=vim (source)
 
