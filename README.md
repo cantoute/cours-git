@@ -103,7 +103,7 @@ git checkout dev/ma-branche
 # Supprimer une branche
 git branch -d dev/ma-vieille-branche
 ```
-### Indexer un ou des fichiers en prévision d'un `commit`
+### `git add` : Indexer les fichiers en prévision d'un `commit`
 En anglais le terme utilisé est 'stage'
 
 Cette action est préalable au commit.  Via `git add` on déclare (ajout à l'index) les fichiers qui seront impliqués dans le commit.
@@ -131,7 +131,7 @@ git add README.md
 ```
 ```bash
 # vous pouvez ensuite vérifier que tout est en ordre
-git status
+$ git status
 Sur la branche dev/ma-branche
 Votre branche est à jour avec 'origin/master'.
 
