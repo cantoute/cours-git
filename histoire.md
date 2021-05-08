@@ -4,6 +4,8 @@ Ah bon ? j'ai cru le voir un coudre un oeuf sur un rondin.
 
 bibette murmure sur une planche
 
+Je regarde un sac en forme de caribou
+
 les moustiques sont de cuisinés à la truffe
 
 Je mange du soleil à chaque repas 
@@ -41,8 +43,3 @@ jouets que le Temps détruit, jouets !
 Austérité, solitude et labeur,
 méditation, prière et renoncement,
 cendres que le Temps écrase, cendres ! 
-
-
-
-Le caribou regade le sac
-master
