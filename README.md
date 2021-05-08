@@ -15,6 +15,7 @@ Si votre ordinateur ne dispose pas de commande `brew`, suivre la procédure déc
 
 - installer `git`
 
+Dans un terminal saisir :
 ```bash
 brew install git
 ```
@@ -63,41 +64,44 @@ git clone git@github.com:cantoute/cours-git.git
 ```bash
 # Opération à effectuer avant de se préparer à valider 
 # vos changements dans le dépot (commit)
-$ git pull
+git pull
 
 # Récupérer toutes les branche
-$ git pull --all
+git pull --all
 ```
 
 ### Avoir un aperçu des éditions *(différences avec le dépôt)*
 
 ```bash
-$ git diff
+git diff
 
 # voir les différences avec un autre branche
-$ git diff master
+git diff master
 
 # voir les différences avec un autre commit
-$ git diff bea30b055a9775fb47d0fba6789fb0cd4fa46540
+git diff bea30b055a9775fb47d0fba6789fb0cd4fa46540
 
 # voir la différence entre deux commits
-$ git diff 5bb67658f74b217f8b8b9c5283a3dbc13be8017a bea30b055a9775fb47d0fba6789fb0cd4fa46540
+git diff 5bb67658f74b217f8b8b9c5283a3dbc13be8017a bea30b055a9775fb47d0fba6789fb0cd4fa46540
 ```
 
 ### Les branches
 ```bash
 # Créer une branche et on bascule dans la branche
-$ git checkout -b dev/ma-branche
+git checkout -b dev/ma-branche
 # on les nomme par leur intention
 # Ex: fix/button feature/new-function
 
 # liste de toutes les branches locales et met en couleur la branche sur laquelle on se trouve
-$ git branch
+git branch
 
 # Basculer sur une branche existante
-$ git checkout master
+git checkout master
 
-$ git checkout dev/ma-branche
+git checkout dev/ma-branche
+
+# Supprimer une branche
+git branch -d dev/ma-vieille-branche
 ```
 ### Indexer un ou des fichiers en prévision d'un `commit`
 En anglais le terme utilisé est 'stage'
@@ -106,28 +110,28 @@ Cette action est préalable au commit.  Via `git add` on déclare (ajout à l'in
 
 ```bash
 # ajouter un fichier seul
-$ git add mon-fichier.txt
+git add mon-fichier.txt
 
 # ajouter des fichiers par groupe
-$ git add *.txt
+git add *.txt
 
 # ajouter tous les fichiers du dossier
 # (sauf ceux mentionnés dans .gitignore)
-$ git add .
+git add .
 
 # l'opération inverse :
 # (utilisez "git restore --staged <fichier>..." pour désindexer)
-$ git restore --staged mon-fichier.txt
+git restore --staged mon-fichier.txt
 ```
 
 
 *J'ai l'intention de 'commiter' ce fichier. Prend donc en compte `README.md` dans le commit que je me prépare à effectuer :*
 ```bash
-$ git add README.md
+git add README.md
 ```
 ```bash
 # vous pouvez ensuite vérifier que tout est en ordre
-$ git status
+git status
 Sur la branche dev/ma-branche
 Votre branche est à jour avec 'origin/master'.
 
@@ -139,21 +143,21 @@ Fichiers non suivis:
   (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
 ```
 
-### Inscrire au dépot les changements indexés (commit)
+### `git commit` : Inscrire au dépot les changements indexés.
 ```bash
-$ git commit -m "Message de l'inscription / nom au commit"
+git commit -m "Message de l'inscription / nom au commit"
 
 # pour saisir le message via l'éditeur (nano/vim/...)
-$ git commit
+git commit
 
 # indexer tous les fichiers déjà suivi (`git add` automatique)
-$ git commit -am "Message de l'inscription / nom au commit"
+git commit -am "Message de l'inscription / nom au commit"
 ```
 
-### Publier les changements sur le dépot distant
+### `git push` : Publier les changements sur le dépot distant.
 ```bash
 # envoie le commit sur github par exemple
-$ git push
+git push
 ```
 ---
 ## Terminal *(Console ou Shell)*
@@ -255,17 +259,17 @@ $ grep -R "blabla"
 Si le fichier existe, cela actualise la date de modification du fichier.
 
 ```bash
-antony@dell-aio:~$ touch toto
-antony@dell-aio:~$ ls -l toto
--rw-rw-r-- 1 antony antony 0 mai    7 19:04 toto
+my-account@my-computer:~$ touch toto
+my-account@my-computer:~$ ls -l toto
+-rw-rw-r-- 1 my-account my-account 0 mai    7 19:04 toto
 
 # 1 minute plus tard
-antony@dell-aio:~$ touch toto
-antony@dell-aio:~$ ls -l toto
--rw-rw-r-- 1 antony antony 0 mai    7 19:05 toto
+my-account@my-computer:~$ touch toto
+my-account@my-computer:~$ ls -l toto
+-rw-rw-r-- 1 my-account my-account 0 mai    7 19:05 toto
 ```
 
-### `nano` Éditeur de fichier texte en console (simple)
+### `nano` : Éditeur de fichier texte en console (simple)
 
 ### `vi` / `vim`
 Éditeur de fichier texte en console. Vim est plus complexe à prendre en main et sans quelques notions totalement inutilisable, nano est votre ami :) 
@@ -277,10 +281,10 @@ antony@dell-aio:~$ ls -l toto
 - Quitter `vi` **sans enregistrer** les changements :
 <span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:q!`
 
-`history` l'historique des commandes saisies
+`history` : l'historique des commandes saisies
 
 ```bash
-$ history | grep git
+my-account@my-computer:~ $ history | grep git
 328  git diff
 329  git pull --all
 330  git diff master
