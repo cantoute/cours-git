@@ -20,10 +20,14 @@ brew install git
 ```
 
 ## Configuration de git
-### A éffectuer une fois
+
 ```bash
+# A effectuer la première fois
 git config --global user.email your@email.com
 git config --global user.name "Votre NOM"
+
+# configurer `nano` comme l'éditeur par défaut
+git config --global core.editor "nano"
 ```
 
 ---
@@ -232,7 +236,7 @@ Il peut être utilisé pour recherche tout fichier contenant un mot.
 ```bash
 $ grep "blabla" *.txt
 
-# récursif (dans tous les sous dossiers également)
+# récursif (également dans tous les sous dossiers)
 $ grep -R "blabla"
 ```
 ### `touch` : Création d’un fichier vide
@@ -253,7 +257,24 @@ antony@dell-aio:~$ ls -l toto
 
 ### `vi` / `vim`
 Éditeur de fichier texte en console. Vim est plus complexe à prendre en main et sans quelques notions totalement inutilisable, nano est votre ami :) 
-If you want to set the editor only for Git, do either (you don’t need both):
-Set core.editor in your Git config: git config --global core.editor "vim"
-Set the GIT_EDITOR environment variable: export GIT_EDITOR=vim (source)
 
+- Activer le mode insertion : `i`
+- Quitter `vi` et enregistrer les changements :
+<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:wq`
+
+- Quitter `vi` **sans enregistrer** les changements :
+<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:q!`
+
+`history` l'historique des commandes saisies
+
+```bash
+$ history | grep git
+328  git diff
+329  git pull --all
+330  git diff master
+331  git merge master
+333  touch demo/.gitkeep
+334  git add .
+335  git pull --all
+336  history | grep git
+```
