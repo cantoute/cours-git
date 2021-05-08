@@ -108,10 +108,17 @@ En anglais le terme utilisé est 'stage'
 
 Cette action est préalable au commit.  Via `git add` on déclare (ajout à l'index) les fichiers qui seront impliqués dans le commit.
 
-```bash
-# ajouter un fichier seul
-git add mon-fichier.txt
 
+```bash
+# J'ai l'intention de 'commiter' les éditions de README.md
+# Prend donc en compte `README.md` dans le commit
+# que je me prépare à effectuer :
+
+git add README.md
+
+```
+
+```bash
 # ajouter des fichiers par groupe
 git add *.txt
 
@@ -124,11 +131,6 @@ git add .
 git restore --staged mon-fichier.txt
 ```
 
-
-*J'ai l'intention de 'commiter' ce fichier. Prend donc en compte `README.md` dans le commit que je me prépare à effectuer :*
-```bash
-git add README.md
-```
 ```bash
 # vous pouvez ensuite vérifier que tout est en ordre
 $ git status
