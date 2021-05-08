@@ -58,21 +58,30 @@ git clone git@github.com:cantoute/cours-git.git
 
 ---
 
-### Synchroniser le dépot local
+### Mettre à jour le dépot local
+
 ```bash
 # Opération à effectuer avant de se préparer à valider 
 # vos changements dans le dépot (commit)
-
 $ git pull
 
-# Récupérer toutes les branche (recommandé sauf sur les projets énormes)
+# Récupérer toutes les branche
 $ git pull --all
 ```
 
-### Avoir un aperçu des différences avec le dépot
+### Avoir un aperçu des éditions *(différences avec le dépôt)*
 
 ```bash
 $ git diff
+
+# voir les différences avec un autre branche
+$ git diff master
+
+# voir les différences avec un autre commit
+$ git diff bea30b055a9775fb47d0fba6789fb0cd4fa46540
+
+# voir la différence entre deux commits
+$ git diff 5bb67658f74b217f8b8b9c5283a3dbc13be8017a bea30b055a9775fb47d0fba6789fb0cd4fa46540
 ```
 
 ### Les branches
@@ -132,10 +141,13 @@ Fichiers non suivis:
 
 ### Inscrire au dépot les changements indexés (commit)
 ```bash
-$ git commit -m "Message de l'inscription / Donner un nom au commit"
+$ git commit -m "Message de l'inscription / nom au commit"
 
-# pour saisir le message via un éditeur (nano/vim/...)
+# pour saisir le message via l'éditeur (nano/vim/...)
 $ git commit
+
+# indexer tous les fichiers déjà suivi (`git add` automatique)
+$ git commit -am "Message de l'inscription / nom au commit"
 ```
 
 ### Publier les changements sur le dépot distant
