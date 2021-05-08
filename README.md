@@ -260,10 +260,10 @@ antony@dell-aio:~$ ls -l toto
 
 - Activer le mode insertion : `i`
 - Quitter `vi` et enregistrer les changements :
-<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">Esc</span> `:wq`
+<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:wq`
 
 - Quitter `vi` **sans enregistrer** les changements :
-<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">Esc</span> `:q!`
+<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:q!`
 
 `history` l'historique des commandes saisies
 
