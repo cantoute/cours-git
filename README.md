@@ -9,6 +9,7 @@
 ### Mac OS X
 
 Il est recommandé d'utiliser l'installation via `homebrew`.
+
 - installer `homebrew`
 
 Si votre ordinateur ne dispose pas de commande `brew`, suivre la procédure décrite ici : https://brew.sh/index_fr
@@ -16,6 +17,7 @@ Si votre ordinateur ne dispose pas de commande `brew`, suivre la procédure déc
 - installer `git`
 
 Dans un terminal saisir :
+
 ```bash
 brew install git
 ```
@@ -47,6 +49,7 @@ git init
 ```
 
 ### Ou cloner un dépot existant
+
 ```bash
 # Avoir une copie locale de ce dépot
 git clone https://github.com/cantoute/cours-git.git
@@ -62,7 +65,7 @@ git clone git@github.com:cantoute/cours-git.git
 ### Mettre à jour le dépot local
 
 ```bash
-# Opération à effectuer avant de se préparer à valider 
+# Opération à effectuer avant de se préparer à valider
 # vos changements dans le dépot (commit)
 git pull
 
@@ -70,7 +73,7 @@ git pull
 git pull --all
 ```
 
-### Avoir un aperçu des éditions *(différences avec le dépôt)*
+### Avoir un aperçu des éditions _(différences avec le dépôt)_
 
 ```bash
 git diff
@@ -86,6 +89,7 @@ git diff 5bb67658f74b217f8b8b9c5283a3dbc13be8017a bea30b055a9775fb47d0fba6789fb0
 ```
 
 ### Les branches
+
 ```bash
 # Créer une branche et on bascule dans la branche
 git checkout -b dev/ma-branche
@@ -103,11 +107,12 @@ git checkout dev/ma-branche
 # Supprimer une branche
 git branch -d dev/ma-vieille-branche
 ```
+
 ### `git add` : Indexer les fichiers en prévision d'un `commit`
+
 En anglais le terme utilisé est 'stage'
 
-Cette action est préalable au commit.  Via `git add` on déclare (ajout à l'index) les fichiers qui seront impliqués dans le commit.
-
+Cette action est préalable au commit. Via `git add` on déclare (ajout à l'index) les fichiers qui seront impliqués dans le commit.
 
 ```bash
 # J'ai l'intention de 'commiter' les éditions de README.md
@@ -146,6 +151,7 @@ Fichiers non suivis:
 ```
 
 ### `git commit` : Inscrire au dépot les changements indexés.
+
 ```bash
 git commit -m "Message de l'inscription / nom au commit"
 
@@ -157,12 +163,15 @@ git commit -am "Message de l'inscription / nom au commit"
 ```
 
 ### `git push` : Publier les changements sur le dépot distant.
+
 ```bash
 # envoie le commit sur github par exemple
 git push
 ```
+
 ---
-## Terminal *(Console ou Shell)*
+
+## Terminal _(Console ou Shell)_
 
 Quelques Commandes shell incontournables
 
@@ -218,13 +227,18 @@ my-account@my-computer:~ $ cd Démo
 my-account@my-computer:~/Démo $ pwd
 /Users/my-account/Démo
 ```
+
 ### `rmdir` : supprimer un dossier vide
 
 ```bash
 # supprimer un dossier vide
 my-account@my-computer:~/Démo $ mkdir toto
 my-account@my-computer:~/Démo $ rmdir toto
+```
 
+### `rm` : supprimer
+
+```bash
 my-account@my-computer:~/Démo $ mkdir toto2
 my-account@my-computer:~/Démo $ touch toto2/empty-file
 
@@ -241,23 +255,25 @@ my-account@my-computer:~/Démo $ rm -rf toto2
 
 ### `mv` : renommer / déplacer
 
-### `rm` : supprimer
-
 ### `cat` : concaténation de fichier texte
-Il permet entre autres de lire un fichier texte en retournant son contenu dans la console.  Souvent utilisé pour rediriger sa sortie vers une autre commande.
+
+Il permet entre autres de lire un fichier texte en retournant son contenu dans la console. Souvent utilisé pour rediriger sa sortie vers une autre commande.
 
 ### `less` : lire le contenu d’un fichier texte de façon interactive. (utile pour les fichiers longs)
 
 ### `grep` : filtrer les lignes d’un fichier texte et de n’afficher que celles correspondant à un motif (pattern)
 
 Il peut être utilisé pour recherche tout fichier contenant un mot.
+
 ```bash
-$ grep "blabla" *.txt
+grep "blabla" *.txt
 
 # récursif (également dans tous les sous dossiers)
-$ grep -R "blabla"
+grep -R "blabla"
 ```
+
 ### `touch` : Création d’un fichier vide
+
 Si le fichier existe, cela actualise la date de modification du fichier.
 
 ```bash
@@ -274,16 +290,17 @@ my-account@my-computer:~$ ls -l toto
 ### `nano` : Éditeur de fichier texte en console (simple)
 
 ### `vi` / `vim`
-Éditeur de fichier texte en console. Vim est plus complexe à prendre en main et sans quelques notions totalement inutilisable, nano est votre ami :) 
+
+Éditeur de fichier texte en console. Vim est plus complexe à prendre en main et sans quelques notions totalement inutilisable, nano est votre ami :)
 
 - Activer le mode insertion : `i`
 - Quitter `vi` et enregistrer les changements :
-<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:wq`
+  <span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:wq`
 
 - Quitter `vi` **sans enregistrer** les changements :
-<span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:q!`
+  <span style="border: 1px solid; border-radius: .5ex; padding: 0 2px">`Esc`</span> `:q!`
 
-`history` : l'historique des commandes saisies
+### `history` : l'historique des commandes saisies
 
 ```bash
 my-account@my-computer:~ $ history | grep git
