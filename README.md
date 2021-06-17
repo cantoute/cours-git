@@ -1,10 +1,23 @@
 # Git - Versioning et sauvegarde
 
----
+## GUI
 
-## Installation de git
+Ici vous trouverez une liste de [clients `git` disponibles](https://git-scm.com/downloads/guis)
+
+- [GitKraken](https://gitcraken.com/) _(win/mac/linux)_
+- [SourceTree](https://www.sourcetreeapp.com/) _(win/mac)_
+- Visual Studio Code _(win/mac/linux)_
+
+  Ces extensions sont bien utiles :
+
+  - GitLens
+  - Git Graph
+
+## Installation du client git 'natif'
 
 ### Windows
+
+Pour les utilisateurs sous windows, il est recommandé que vous installiez le client disponible [ici](https://git-scm.com/download/win) qui en plus ajoutera un shell utilisable (le shell `cmd.exe` de windows ne sert pratiquement à rien dans le cadre du développement)
 
 ### Mac OS X
 
@@ -12,15 +25,15 @@ Il est recommandé d'utiliser l'installation via `homebrew`.
 
 - installer `homebrew`
 
-Si votre ordinateur ne dispose pas de commande `brew`, suivre la procédure décrite ici : https://brew.sh/index_fr
+  Si votre ordinateur ne dispose pas de commande `brew`, suivre la procédure décrite ici : https://brew.sh/index_fr
 
 - installer `git`
 
-Dans un terminal saisir :
+  Dans un terminal saisir :
 
-```bash
-brew install git
-```
+  ```bash
+  brew install git
+  ```
 
 ## Configuration de git
 
